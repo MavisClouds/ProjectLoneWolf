@@ -50,7 +50,7 @@ public class groundmoveontrig : MonoBehaviour
         }
         else
         {
-            platform.transform.position = Vector3.MoveTowards(platform.transform.position, curpoints.position, Time.deltaTime * movespeed);
+           // platform.transform.position = Vector3.MoveTowards(platform.transform.position, curpoints.position, Time.deltaTime * movespeed);
 
             if (platform.transform.position == curpoints.position)
             {

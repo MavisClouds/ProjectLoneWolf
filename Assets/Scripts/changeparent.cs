@@ -19,17 +19,5 @@ public class changeparent : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "moveplat")
-        {
-            transform.parent = collision.gameObject.transform;
-            agan = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        transform.parent = null;
-    }
+   
 }

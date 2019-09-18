@@ -79,7 +79,18 @@ public class moving : MonoBehaviour {
 
         }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "moveplat")
+        {
+            transform.parent = collision.transform;
+        }
+    }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        transform.parent = null;
+    }
 
 }
 

@@ -22,7 +22,12 @@ public class winpanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CrossPlatformInputManager.GetButtonDown("link") && isonstepped == true)
+       /* if (CrossPlatformInputManager.GetButtonDown("link") && isonstepped == true)
+        {
+            Time.timeScale = 0;
+            winpaneli.SetActive(true);
+        }*/
+        if (Input.GetKey(KeyCode.Space) && isonstepped == true)
         {
             Time.timeScale = 0;
             winpaneli.SetActive(true);
